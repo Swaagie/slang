@@ -68,7 +68,7 @@ impl fmt::Display for SearchResult {
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args = Cli::from_args();
     let needle = &args.acronym;
-    let config = crate::config::SlangConfig::new(args.config.map(PathBuf::from))?;
+    let config = config::SlangConfig::new(args.config.map(PathBuf::from))?;
     let urls = config.get_sources(args.context)?;
 
     // Async concurrent lookup against all configured resources. Assume sources
