@@ -28,6 +28,7 @@ struct Cli {
     config: Option<String>,
 
     #[structopt(flatten)]
+    #[allow(dead_code)]
     verbose: clap_verbosity_flag::Verbosity,
 }
 
@@ -37,6 +38,7 @@ struct Cli {
 #[derive(Deserialize, Debug)]
 struct Acronym {
     abbreviation: String,
+    #[allow(dead_code)]
     acronym_id: Option<u32>,
     expansion: String,
 }

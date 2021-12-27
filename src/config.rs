@@ -4,6 +4,7 @@ use std::path::PathBuf;
 use config::{Config, File};
 use home::home_dir;
 
+#[derive(Debug)]
 pub struct SlangConfig {
     data: Config
 }
