@@ -52,8 +52,6 @@ struct SearchResult {
 
 impl fmt::Display for SearchResult {
     fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
-
-
         if let Some(acroynym) = &self.value {
             formatter.write_fmt(format_args!("✅ Context {}: ", &self.context))?;
             formatter.write_str(&acroynym.expansion)?;
