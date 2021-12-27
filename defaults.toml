@@ -1,0 +1,3 @@
+[sources]
+NASA="https://raw.githubusercontent.com/nasa/NASA-Acronyms/master/lists/acronyms.json"
+TRIATHLON="https://raw.githubusercontent.com/Swaagie/triathlon-acronyms/main/list.json"
