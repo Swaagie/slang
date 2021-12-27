@@ -2,6 +2,13 @@
 name = "slang-cli"
 version = "0.2.0"
 edition = "2021"
+authors = ["Martijn Swaagman <martijn@swaagman.online>"]
+description = "Acronym search CLI"
+license = "MIT"
+keywords = ["acronym", "slang", "jargon"]
+exclude = [
+  ".github"
+]
 
 [[bin]]
 name = "slang"
